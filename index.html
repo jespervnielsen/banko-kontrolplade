@@ -4,19 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Banko Kontrol Plade</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; display: flex; gap: 40px; }
-    .board { display: grid; grid-template-columns: repeat(10, 40px); gap: 5px; }
-    .cell { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border: 1px solid #333; cursor: pointer; user-select: none; }
-    .marked { background-color: #4caf50; color: white; }
-    .sidebar { width: 200px; }
-    .numbers-list { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: auto; }
-    .controls { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div>
-    <h2>Banko plade</h2>
+  <div class="main">
+    <div class="row row-split">
+
+      <h2>Banko plade</h2>
+      <div class="row-select">      <select id="rowSelect">
+        <option value="1">Række 1</option>
+        <option value="2">Række 2</option>
+        <option value="3">Række 3</option>
+      </select>
+    </div>
+    </div>
     <div id="board" class="board"></div>
   </div>
 
@@ -25,65 +26,11 @@
     <div id="drawnNumbers" class="numbers-list"></div>
 
     <div class="controls">
-      <label for="rowSelect">Vælg række:</label>
-      <select id="rowSelect">
-        <option value="1">Række 1</option>
-        <option value="2">Række 2</option>
-        <option value="3">Række 3</option>
-      </select>
 
       <button id="newGameBtn">Nyt spil</button>
     </div>
   </div>
 
-  <script>
-    const board = document.getElementById('board');
-    const drawnNumbersDiv = document.getElementById('drawnNumbers');
-    const newGameBtn = document.getElementById('newGameBtn');
-
-    const drawnNumbers = [];
-
-    function createBoard() {
-      board.innerHTML = '';
-
-      for (let i = 1; i <= 90; i++) {
-        const cell = document.createElement('div');
-        cell.className = 'cell';
-        cell.textContent = i;
-
-        cell.addEventListener('click', () => toggleCell(cell, i));
-        board.appendChild(cell);
-      }
-    }
-
-    function toggleCell(cell, number) {
-      cell.classList.toggle('marked');
-
-      // If marked, add to list
-      if (cell.classList.contains('marked')) {
-        drawnNumbers.push(number);
-      } else {
-        // Remove from list if unmarked
-        const idx = drawnNumbers.indexOf(number);
-        if (idx !== -1) drawnNumbers.splice(idx, 1);
-      }
-
-      updateDrawnNumbers();
-    }
-
-    function updateDrawnNumbers() {
-      drawnNumbersDiv.innerHTML = drawnNumbers.join(', ');
-    }
-
-    newGameBtn.addEventListener('click', () => {
-      if (confirm('Er du sikker på du vil starte et nyt spil?')) {
-        drawnNumbers.length = 0;
-        updateDrawnNumbers();
-        createBoard();
-      }
-    });
-
-    createBoard();
-  </script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
