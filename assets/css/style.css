@@ -6,6 +6,11 @@ body {
   justify-content: center;
 
   align-items: flex-start;
+  background-image: url(../images/christmas-border.png);
+  background-repeat: repeat-x;
+  background-size: 20vh;
+  background-position: top;
+  padding-top: 20vh;
 }
 .main {
   display: flex;
