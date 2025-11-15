@@ -8,9 +8,9 @@ body {
   align-items: flex-start;
   background-image: url(../images/christmas-border.png);
   background-repeat: repeat-x;
-  background-size: 20vh;
+  background-size: auto 10vh;
   background-position: top;
-  padding-top: 20vh;
+  padding-top: 10vh;
 }
 .main {
   display: flex;
