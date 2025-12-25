@@ -126,6 +126,7 @@ function buildPrintPage(cards, seed) {
   }
 
   const createdAt = new Date().toLocaleString('da-DK')
+  const root = location.origin + "/banko-kontrolplade"
 
   return `<!DOCTYPE html>
   <html lang="da">
@@ -133,8 +134,8 @@ function buildPrintPage(cards, seed) {
     <meta charset="UTF-8" />
     <title>Banko plader</title>
 
-	<link rel="stylesheet" href="${location.origin}/assets/css/print.css" media="print">
-	<link rel="stylesheet" href="${location.origin}/assets/css/print.css">
+	<link rel="stylesheet" href="${root}/assets/css/print.css" media="print">
+	<link rel="stylesheet" href="${root}/assets/css/print.css">
   </head>
   <body>
     <div class="meta">Genereret: ${createdAt}${seed ? ` - Seed: ${seed}` : ''}</div>
