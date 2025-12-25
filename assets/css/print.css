@@ -36,7 +36,7 @@ body {
 
   /* 3 stk pr side */
   width: 186mm;     /* 210 − 2×12mm */
-  height: 88mm;     /* 3×88 + gaps ≈ A4 */
+  height: 65mm;
   padding: 4mm;
 
   display: flex;
