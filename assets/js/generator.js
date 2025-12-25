@@ -132,18 +132,8 @@ function buildPrintPage(cards, seed) {
   <head>
     <meta charset="UTF-8" />
     <title>Banko plader</title>
-    <style>
-      * { box-sizing: border-box; }
-      @page { size: A4; margin: 12mm; }
-      body { font-family: Arial, sans-serif; margin: 0; padding: 12mm; background: #f8f8f8; }
-      .meta { font-size: 12px; color: #555; margin-bottom: 8px; }
-      .page { display: flex; flex-direction: column; gap: 8mm; margin-bottom: 14mm; page-break-after: always; }
-      .page:last-child { page-break-after: auto; }
-      .card { border: 1px solid #333; padding: 10px; background: white; width: 100%; }
-      .card-header { font-weight: bold; font-size: 12px; margin-bottom: 6px; display: flex; justify-content: space-between; }
-      .card-grid { width: 100%; border-collapse: collapse; table-layout: fixed; }
-      .card-grid td { border: 1px solid #333; width: 1%; height: 22px; text-align: center; font-size: 13px; padding: 2px 0; }
-    </style>
+	<link rel="stylesheet" href="css/print.css" media="print">
+	<link rel="stylesheet" href="css/print.css">
   </head>
   <body>
     <div class="meta">Genereret: ${createdAt}${seed ? ` - Seed: ${seed}` : ''}</div>
