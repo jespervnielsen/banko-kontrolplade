@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generer banko plader</title>
+  <link rel="stylesheet" href="assets/css/generator.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Generer banko plader</h1>
+      <p class="sub">3 plader pr. A4-side, klar til print eller PDF</p>
+    </div>
+    <a class="link" href="index.html">Tilbage til kontrolplade</a>
+  </header>
+
+  <main class="panel">
+    <div class="form-grid">
+      <label for="cardCount">Antal plader</label>
+      <input type="number" id="cardCount" min="3" step="3" value="6" />
+
+      <label for="seedInput">Seed (valgfri, for gentagelige plader)</label>
+      <input type="text" id="seedInput" placeholder="fx juleaften2024" />
+    </div>
+
+    <button id="generateBtn" class="primary">Generer og åbn print</button>
+
+    <p class="hint">Tip: Tillad pop-ups for at kunne åbne printvinduet. Brug browserens "Gem som PDF" hvis du vil gemme filen.</p>
+  </main>
+
+  <script src="assets/js/generator.js"></script>
+</body>
+</html>
