@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.meta {
+  font-size: 11px;
+  margin: 6mm 0 4mm 12mm;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 5mm;
+  page-break-after: always;
+  padding: 0 12mm 12mm 12mm;
+}
+
+.page:last-child {
+  page-break-after: auto;
+}
+
+.card {
+  border: 1px solid #333;
+  background: white;
+
+  /* 3 stk pr side */
+  width: 186mm;     /* 210 − 2×12mm */
+  height: 88mm;     /* 3×88 + gaps ≈ A4 */
+  padding: 4mm;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 11px;
+  margin-bottom: 3mm;
+}
+
+.card-grid {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  flex: 1;
+}
+
+.card-grid td {
+  border: 1px solid #333;
+  text-align: center;
+  font-size: 13px;
+  padding: 2px 0;
+}
