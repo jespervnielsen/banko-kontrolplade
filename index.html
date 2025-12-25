@@ -7,27 +7,46 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div class="main">
-    <div class="row row-split">
+  <div class="content-row">
+    <div class="main">
+      <div class="row row-split">
 
-      <h2>Banko plade</h2>
-      <div class="row-select">      <select id="rowSelect">
-        <option value="1">1 Række</option>
-        <option value="2">2 Rækker</option>
-        <option value="3">Fuld plade</option>
-      </select>
+        <h2>Banko plade</h2>
+        <div class="row-select">
+          <select id="rowSelect">
+            <option value="1">1 Række</option>
+            <option value="2">2 Rækker</option>
+            <option value="3">Fuld plade</option>
+          </select>
+        </div>
+      </div>
+      <div id="board" class="board"></div>
     </div>
+
+    <div class="sidebar">
+      <h3>Udtrukne numre</h3>
+      <div id="drawnNumbers" class="numbers-list"></div>
+
+      <div class="controls">
+
+        <button id="newGameBtn">Nyt spil</button>
+      </div>
     </div>
-    <div id="board" class="board"></div>
   </div>
 
-  <div class="sidebar">
-    <h3>Udtrukne numre</h3>
-    <div id="drawnNumbers" class="numbers-list"></div>
+  <div class="generator-panel">
+    <div class="row row-split">
+      <h3>Generer banko plader</h3>
+      <div class="generator-note">3 plader pr. A4-side, klar til print/PDF</div>
+    </div>
+    <div class="generator-controls">
+      <label for="cardCount">Antal plader</label>
+      <input type="number" id="cardCount" min="3" step="3" value="6" />
 
-    <div class="controls">
+      <label for="seedInput">Seed (valgfri, for gentagelige plader)</label>
+      <input type="text" id="seedInput" placeholder="fx juleaften2024" />
 
-      <button id="newGameBtn">Nyt spil</button>
+      <button id="generateBtn">Åbn printvenlig side</button>
     </div>
   </div>
 

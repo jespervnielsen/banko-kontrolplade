@@ -2,15 +2,22 @@ body {
   font-family: Arial, sans-serif;
   padding: 20px;
   display: flex;
-  gap: 40px;
-  justify-content: center;
-
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
   background-image: url(../images/christmas-border.png);
   background-repeat: repeat-x;
   background-size: auto 10vh;
   background-position: top;
   padding-top: 10vh;
+}
+.content-row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
 }
 .main {
   display: flex;
@@ -68,4 +75,39 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.generator-panel {
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  background: white;
+}
+
+.generator-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.generator-controls label {
+  font-weight: bold;
+}
+
+.generator-controls input {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.generator-controls button {
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.generator-note {
+  font-size: 12px;
+  color: #555;
 }
