@@ -132,9 +132,9 @@ function buildPrintPage(cards, seed) {
   <head>
     <meta charset="UTF-8" />
     <title>Banko plader</title>
-	<base href="${location.origin}">
-	<link rel="stylesheet" href="assets/css/print.css" media="print">
-	<link rel="stylesheet" href="assets/css/print.css">
+
+	<link rel="stylesheet" href="${location.origin}/assets/css/print.css" media="print">
+	<link rel="stylesheet" href="${location.origin}/assets/css/print.css">
   </head>
   <body>
     <div class="meta">Genereret: ${createdAt}${seed ? ` - Seed: ${seed}` : ''}</div>
