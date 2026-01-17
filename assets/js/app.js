@@ -3,7 +3,6 @@ const drawnNumbersDiv = document.getElementById('drawnNumbers');
 const lastDrawnDiv = document.getElementById('lastDrawn');
 const newGameBtn = document.getElementById('newGameBtn');
 const drawNumberBtn = document.getElementById('drawNumberBtn');
-const fullscreenBtn = document.getElementById('fullscreenBtn');
 const settingsPanel = document.getElementById('settingsPanel');
 
 const drawnNumbers = [];
@@ -86,16 +85,6 @@ drawNumberBtn.addEventListener('click', () => {
     const num = availableNumbers[randomIndex];
     const cells = board.querySelectorAll('.cell');
     toggleCell(cells[num - 1], num);
-  }
-});
-
-fullscreenBtn.addEventListener('click', () => {
-  if (document.fullscreenElement) {
-    document.exitFullscreen();
-    fullscreenBtn.textContent = 'Fuld skærm';
-  } else {
-    document.documentElement.requestFullscreen();
-    fullscreenBtn.textContent = 'Afslut fuld skærm';
   }
 });
 

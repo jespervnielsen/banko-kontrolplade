@@ -1,20 +1,25 @@
 # banko-kontrolplade
 En simpel, reklamefri og open-source banko-kontrolplade, som kan bruges sammen med en fysisk pose med numre.
 
+## Sider
+
+| Side | Beskrivelse |
+|------|-------------|
+| [Kontrolplade](index.html) | Hovedsiden til at styre banko-spillet |
+| [Pladegenerator](generator.html) | Generer banko-plader til print |
+
 ## Funktioner
 
 ### Kontrolplade
-- Du trækker selv numrene fysisk – systemet vælger ikke tal for dig.
 - Klik på et tal for at markere det, klik igen for at fjerne markeringen.
+- "Træk tal" knap til automatisk at trække et tilfældigt nummer.
 - Viser en liste over alle markerede/udtrukne tal i den rækkefølge, de er klikket.
 - Stort "Sidst trukket" display til deltagerne.
-- Indtast nummer med tastatur (1-90 + Enter).
-- Fuld skærm-visning til projektor/storskærm.
 - Indeholder mulighed for manuelt valg af række (1, 2 eller 3).
 - "Nyt spil" nulstiller hele pladen efter bekræftelse.
 
 ### Indstillinger
-- **Temaer**: Vælg mellem Standard, Jul, Påske og Nytår.
+- **Temaer**: Vælg mellem Standard, Jul, Påske, Nytår, Fastelavn, Sommer, Halloween, Sankt Hans og Fest/Jubilæum.
 
 ### Pladegenerator
 - Generer banko-plader klar til print (3 pr. A4-side).
