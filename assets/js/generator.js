@@ -1,22 +1,8 @@
 const cardCountInput = document.getElementById('cardCount')
-const seedInput = document.getElementById('seedInput')
 const generateBtn = document.getElementById('generateBtn')
 
-function createRng(seed) {
-  if (!seed) return () => Math.random()
-
-  let h = 1779033703 ^ seed.length
-  for (let i = 0; i < seed.length; i++) {
-    h = Math.imul(h ^ seed.charCodeAt(i), 3432918353)
-    h = (h << 13) | (h >>> 19)
-  }
-
-  return () => {
-    h = Math.imul(h ^ (h >>> 16), 2246822507)
-    h = Math.imul(h ^ (h >>> 13), 3266489909)
-    h ^= h >>> 16
-    return (h >>> 0) / 4294967296
-  }
+function createRng() {
+  return () => Math.random()
 }
 
 function columnRange(idx) {
@@ -83,8 +69,8 @@ function createCard(rng) {
   return Array.from({ length: 3 }, () => Array(9).fill(''))
 }
 
-function generateCards(count, seed) {
-  const rng = createRng(seed)
+function generateCards(count) {
+  const rng = createRng()
   const cards = []
   for (let i = 0; i < count; i++) {
     cards.push(createCard(rng))
@@ -92,7 +78,7 @@ function generateCards(count, seed) {
   return cards
 }
 
-function cardToHTML(card, idx, seed) {
+function cardToHTML(card, idx) {
   const rows = card
     .map(
       (row) =>
@@ -102,11 +88,9 @@ function cardToHTML(card, idx, seed) {
     )
     .join('')
 
-  const seedLabel = seed ? `Seed: ${seed}` : 'Tilfældig'
-
   return `
     <div class="card">
-      <div class="card-header">Plade #${idx + 1} - ${seedLabel}</div>
+      <div class="card-header">Plade #${idx + 1}</div>
       <table class="card-grid">
         ${rows}
       </table>
@@ -114,19 +98,19 @@ function cardToHTML(card, idx, seed) {
   `
 }
 
-function buildPrintPage(cards, seed) {
+function buildPrintPage(cards) {
   const pages = []
   for (let i = 0; i < cards.length; i += 3) {
     const slice = cards.slice(i, i + 3)
     const cardsHTML = slice
-      .map((card, offset) => cardToHTML(card, i + offset, seed))
+      .map((card, offset) => cardToHTML(card, i + offset))
       .join('')
 
     pages.push(`<div class="page">${cardsHTML}</div>`)
   }
 
   const createdAt = new Date().toLocaleString('da-DK')
-  const root = location.origin + "/banko-kontrolplade"
+  const root = location.href.replace(/[^/]*$/, '')
 
   return `<!DOCTYPE html>
   <html lang="da">
@@ -138,15 +122,15 @@ function buildPrintPage(cards, seed) {
 	<link rel="stylesheet" href="${root}/assets/css/print.css">
   </head>
   <body>
-    <div class="meta">Genereret: ${createdAt}${seed ? ` - Seed: ${seed}` : ''}</div>
+    <div class="meta">Genereret: ${createdAt}</div>
     ${pages.join('')}
     <script>window.onload = () => { window.focus(); window.print(); };</script>
   </body>
   </html>`
 }
 
-function openPrintWindow(cards, seed) {
-  const html = buildPrintPage(cards, seed)
+function openPrintWindow(cards) {
+  const html = buildPrintPage(cards)
   const printWindow = window.open('', '_blank')
   if (!printWindow) return alert('Pop-up blev blokeret. Tillad pop-ups for at printe pladerne.')
 
@@ -160,9 +144,7 @@ if (generateBtn) {
     const count = Math.max(3, Math.ceil(raw / 3) * 3)
     cardCountInput.value = count
 
-    const seed = seedInput.value.trim()
-
-    const cards = generateCards(count, seed)
-    openPrintWindow(cards, seed)
+    const cards = generateCards(count)
+    openPrintWindow(cards)
   })
 }

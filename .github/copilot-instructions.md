@@ -1,88 +1,105 @@
 # Banko Kontrolplade - AI Coding Agent Instructions
 
 ## Project Overview
-This is a single-file, vanilla JavaScript bingo control board (Danish "banko") for tracking numbers drawn from a physical bag. The entire application lives in `index.html` with inline CSS and JavaScript - no build process, frameworks, or external dependencies.
+This is a vanilla JavaScript bingo control board (Danish "banko") with two main components:
+- **Main app** (`index.html` + `assets/js/app.js` + `assets/js/settings.js`): Interactive bingo number tracking board with settings panel
+- **Generator** (`generator.html` + `assets/js/generator.js`): Bingo card generator for printing
+
+The project follows strict principles: zero dependencies, no build tools, no tracking, and works by opening HTML files directly in browsers.
 
 ## Core Architecture Principles
 - **Zero dependencies**: No frameworks, libraries, or external scripts - pure HTML/CSS/JavaScript only
-- **Single-file application**: All code (HTML, CSS, JS) is contained in `index.html`
-- **Privacy-first**: No tracking, cookies, analytics, data storage, or network requests
-- **Simplicity**: The app is intentionally minimal - no feature creep beyond basic bingo number tracking
+- **Privacy-first**: No tracking, cookies, analytics, or network requests
+- **Simplicity**: Minimal, focused functionality for bingo number tracking
+- **Local storage**: User settings (theme) stored in localStorage only
 
 ## Key Design Patterns
 
 ### State Management
-- The only application state is `drawnNumbers` array (line 46) - tracks clicked numbers in order
-- DOM is the source of truth for visual state (`.marked` class on cells)
-- No localStorage, sessionStorage, or persistence - games reset on refresh
+- `drawnNumbers` array (app.js) - tracks clicked numbers in order, resets on refresh
+- `banko-settings` (localStorage) - persists user settings between sessions
+- DOM `.marked` class provides visual state for marked cells
 
 ### UI Structure
 ```
+├── Settings Panel (left sidebar, collapsible)
+│   └── Theme selector (Standard, Jul, Påske, Nytår)
 ├── Main board: 10x9 grid (numbers 1-90)
-├── Sidebar:
-│   ├── Drawn numbers list (comma-separated display)
-│   ├── Row selector (currently unused but present)
-│   └── New game button (clears state with confirmation)
+├── Right sidebar:
+│   ├── Last drawn number (large display)
+│   ├── Drawn numbers list
+│   ├── Number input (keyboard entry)
+│   └── Controls (fullscreen, new game, generator link)
 ```
 
 ### Event Handling
-- Board cells use direct click listeners (line 54) - toggle `marked` class
-- Clicking marked cells removes them from `drawnNumbers` array
-- No event delegation - each cell has its own listener (acceptable for fixed 90 cells)
+- Board cells use direct click listeners
+- Settings panel toggle via gear icon
+- Keyboard input: Enter to mark typed number
+- Fullscreen toggle via Fullscreen API
 
 ## Development Workflow
 
 ### Testing
-Open `index.html` directly in a browser - no build step needed:
+Open HTML files directly in a browser - no build step needed:
 ```bash
 open index.html  # macOS
 ```
 
 ### Making Changes
-1. Edit `index.html` directly
+1. Edit files directly
 2. Refresh browser to see changes
 3. No compilation, bundling, or transpilation required
 
 ## Code Conventions
 
-### Styling
-- Inline `<style>` block in `<head>` (lines 7-16)
-- CSS Grid for board layout: `grid-template-columns: repeat(10, 40px)`
-- Color scheme: Green (#4caf50) for marked numbers
-
 ### JavaScript
-- Vanilla ES6+ JavaScript in inline `<script>` tag (lines 42-85)
-- No semicolons (mostly) - follow existing style
-- Danish language for UI text and comments
+- Vanilla ES6+ in separate files
+- `settings.js` loads before `app.js`
+- Danish language for UI text, English for variable names
 - Simple imperative style - no classes or modules
 
-### Language
-- **UI text**: Danish (e.g., "Nyt spil", "Udtrukne numre")
-- **Code**: English variable names (`drawnNumbers`, `toggleCell`)
-- **Comments**: Can be Danish or English but keep UI consistent
+### CSS
+- CSS Custom Properties for theme colors (`--marked-color`)
+- Theme classes on body: `.theme-standard`, `.theme-jul`, `.theme-paaske`, `.theme-nytaar`
+- Separate styles for settings panel, fullscreen mode
+
+### localStorage
+```javascript
+{
+  "banko-settings": {
+    "theme": "standard",
+    "settingsOpen": false
+  }
+}
+```
 
 ## Important Constraints
 
-When adding features, respect these hard constraints from README.md:
+When adding features, respect these hard constraints:
 - ❌ No frameworks or third-party libraries
-- ❌ No backend or data persistence
+- ❌ No backend or network requests
 - ❌ No tracking, analytics, or cookies
 - ❌ No build tools or installation requirements
-- ✅ Must work by opening `index.html` in a browser
+- ❌ No storing game state (drawn numbers must reset on refresh)
+- ✅ localStorage allowed for user settings only
+- ✅ Must work by opening HTML files in a browser
 - ✅ Desktop and tablet optimized (not mobile-first)
 
 ## Common Modifications
 
-### Adding Features
-- Insert new HTML in appropriate section (board area or sidebar)
-- Add CSS rules to inline `<style>` block
-- Add JavaScript to inline `<script>` block maintaining global scope pattern
-- Test by refreshing browser
+### Adding Themes
+1. Create border image in `assets/images/`
+2. Add CSS class in `style.css` (`.theme-newname`)
+3. Add option in `index.html` theme selector
+4. Add to `themes` object in `settings.js`
+
+### Adding Settings
+1. Add to `defaultSettings` in `settings.js`
+2. Add UI controls in `index.html` settings panel
+3. Add handler in `initSettingsPanel()`
 
 ### Styling Changes
-- Modify CSS in `<style>` block (lines 7-16)
-- Use simple selectors - avoid complex CSS
+- Modify CSS in corresponding stylesheet
+- Use CSS custom properties for theme-dependent values
 - Maintain responsive design with flexbox/grid
-
-### Unused Features
-The row selector (`#rowSelect`) is present in the UI but not functionally implemented - this appears to be a placeholder for future row-based game modes.

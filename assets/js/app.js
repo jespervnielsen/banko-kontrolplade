@@ -1,8 +1,32 @@
 const board = document.getElementById('board');
 const drawnNumbersDiv = document.getElementById('drawnNumbers');
+const lastDrawnDiv = document.getElementById('lastDrawn');
 const newGameBtn = document.getElementById('newGameBtn');
+const drawNumberBtn = document.getElementById('drawNumberBtn');
+const fullscreenBtn = document.getElementById('fullscreenBtn');
+const settingsPanel = document.getElementById('settingsPanel');
 
 const drawnNumbers = [];
+
+// Initialiser settings og tema ved opstart
+function initApp() {
+  const settings = getSettings();
+  
+  // Anvend gemt tema
+  applyTheme(settings.theme);
+  
+  // Sæt tema-selector til gemt værdi
+  const themeSelect = document.getElementById('themeSelect');
+  if (themeSelect) {
+    themeSelect.value = settings.theme;
+  }
+  
+  // Initialiser settings panel
+  initSettingsPanel(settingsPanel);
+  
+  // Opret board
+  createBoard();
+}
 
 function createBoard() {
   board.innerHTML = '';
@@ -34,6 +58,9 @@ function toggleCell(cell, number) {
 
 function updateDrawnNumbers() {
   drawnNumbersDiv.innerHTML = drawnNumbers.join(', ');
+  lastDrawnDiv.textContent = drawnNumbers.length > 0 
+    ? drawnNumbers[drawnNumbers.length - 1] 
+    : '-';
 }
 
 newGameBtn.addEventListener('click', () => {
@@ -44,4 +71,33 @@ newGameBtn.addEventListener('click', () => {
   }
 });
 
-createBoard();
+drawNumberBtn.addEventListener('click', () => {
+  // Find alle numre der ikke er trukket endnu
+  const availableNumbers = [];
+  for (let i = 1; i <= 90; i++) {
+    if (!drawnNumbers.includes(i)) {
+      availableNumbers.push(i);
+    }
+  }
+  
+  // Hvis der er numre tilbage, træk et tilfældigt
+  if (availableNumbers.length > 0) {
+    const randomIndex = Math.floor(Math.random() * availableNumbers.length);
+    const num = availableNumbers[randomIndex];
+    const cells = board.querySelectorAll('.cell');
+    toggleCell(cells[num - 1], num);
+  }
+});
+
+fullscreenBtn.addEventListener('click', () => {
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+    fullscreenBtn.textContent = 'Fuld skærm';
+  } else {
+    document.documentElement.requestFullscreen();
+    fullscreenBtn.textContent = 'Afslut fuld skærm';
+  }
+});
+
+// Start app
+initApp();

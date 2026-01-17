@@ -6,7 +6,30 @@
   <title>Banko Kontrol Plade</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
+<body class="theme-standard">
+  <!-- Settings Panel -->
+  <div id="settingsPanel" class="settings-panel">
+    <button id="settingsToggle" class="settings-toggle" title="Indstillinger">&#9881;</button>
+    <div class="settings-content">
+      <h3>Indstillinger</h3>
+      
+      <div class="settings-section">
+        <label for="themeSelect">Tema</label>
+        <select id="themeSelect">
+          <option value="standard">Standard</option>
+          <option value="jul">Jul</option>
+          <option value="paaske">Påske</option>
+          <option value="nytaar">Nytår</option>
+          <option value="fastelavn">Fastelavn</option>
+          <option value="sommer">Sommer</option>
+          <option value="halloween">Halloween</option>
+          <option value="sankthans">Sankt Hans</option>
+          <option value="fest">Fest/Jubilæum</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
   <div class="content-row">
     <div class="main">
       <div class="row row-split">
@@ -24,17 +47,22 @@
     </div>
 
     <div class="sidebar">
+      <h3>Sidst trukket</h3>
+      <div id="lastDrawn" class="last-drawn">-</div>
+
       <h3>Udtrukne numre</h3>
       <div id="drawnNumbers" class="numbers-list"></div>
 
       <div class="controls">
-
+        <button id="drawNumberBtn">Træk tal</button>
+        <button id="fullscreenBtn">Fuld skærm</button>
         <button id="newGameBtn">Nyt spil</button>
         <a class="link-btn" href="generator.html" target="_blank" rel="noopener">Generer banko plader</a>
       </div>
     </div>
   </div>
 
+  <script src="assets/js/settings.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
