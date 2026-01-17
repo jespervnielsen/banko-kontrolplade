@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="422" viewBox="0 0 2000 422">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#E0F7FA"/>
+    </linearGradient>
+  </defs>
+  <rect width="2000" height="422" fill="url(#sky)"/>
+  <!-- Grass -->
+  <ellipse cx="100" cy="400" rx="120" ry="40" fill="#8BC34A"/>
+  <ellipse cx="350" cy="410" rx="100" ry="30" fill="#7CB342"/>
+  <ellipse cx="600" cy="405" rx="130" ry="35" fill="#8BC34A"/>
+  <ellipse cx="900" cy="400" rx="110" ry="40" fill="#7CB342"/>
+  <ellipse cx="1150" cy="408" rx="120" ry="32" fill="#8BC34A"/>
+  <ellipse cx="1400" cy="402" rx="100" ry="38" fill="#7CB342"/>
+  <ellipse cx="1650" cy="410" rx="130" ry="30" fill="#8BC34A"/>
+  <ellipse cx="1900" cy="400" rx="120" ry="40" fill="#7CB342"/>
+  <!-- Easter Eggs -->
+  <ellipse cx="150" cy="350" rx="25" ry="35" fill="#FF69B4"/>
+  <ellipse cx="150" cy="350" rx="15" ry="8" fill="#FFB6C1"/>
+  <ellipse cx="400" cy="360" rx="22" ry="32" fill="#FFD700"/>
+  <ellipse cx="400" cy="360" rx="12" ry="6" fill="#FFEC8B"/>
+  <ellipse cx="650" cy="355" rx="28" ry="38" fill="#87CEEB"/>
+  <ellipse cx="650" cy="355" rx="16" ry="8" fill="#B0E0E6"/>
+  <ellipse cx="950" cy="365" rx="24" ry="34" fill="#98FB98"/>
+  <ellipse cx="950" cy="365" rx="14" ry="7" fill="#90EE90"/>
+  <ellipse cx="1200" cy="352" rx="26" ry="36" fill="#DDA0DD"/>
+  <ellipse cx="1200" cy="352" rx="15" ry="8" fill="#E6E6FA"/>
+  <ellipse cx="1500" cy="358" rx="23" ry="33" fill="#FFA07A"/>
+  <ellipse cx="1500" cy="358" rx="13" ry="7" fill="#FFB6C1"/>
+  <ellipse cx="1800" cy="362" rx="27" ry="37" fill="#ADD8E6"/>
+  <ellipse cx="1800" cy="362" rx="16" ry="8" fill="#E0FFFF"/>
+  <!-- Flowers -->
+  <circle cx="250" cy="380" r="12" fill="#FFD700"/>
+  <circle cx="238" cy="372" r="8" fill="#FFFFFF"/>
+  <circle cx="262" cy="372" r="8" fill="#FFFFFF"/>
+  <circle cx="238" cy="388" r="8" fill="#FFFFFF"/>
+  <circle cx="262" cy="388" r="8" fill="#FFFFFF"/>
+  <circle cx="550" cy="375" r="10" fill="#FF69B4"/>
+  <circle cx="540" cy="368" r="6" fill="#FFB6C1"/>
+  <circle cx="560" cy="368" r="6" fill="#FFB6C1"/>
+  <circle cx="540" cy="382" r="6" fill="#FFB6C1"/>
+  <circle cx="560" cy="382" r="6" fill="#FFB6C1"/>
+  <circle cx="1050" cy="378" r="11" fill="#FFD700"/>
+  <circle cx="1039" cy="370" r="7" fill="#FFFFFF"/>
+  <circle cx="1061" cy="370" r="7" fill="#FFFFFF"/>
+  <circle cx="1039" cy="386" r="7" fill="#FFFFFF"/>
+  <circle cx="1061" cy="386" r="7" fill="#FFFFFF"/>
+  <circle cx="1350" cy="382" r="9" fill="#FF69B4"/>
+  <circle cx="1341" cy="376" r="5" fill="#FFB6C1"/>
+  <circle cx="1359" cy="376" r="5" fill="#FFB6C1"/>
+  <circle cx="1341" cy="388" r="5" fill="#FFB6C1"/>
+  <circle cx="1359" cy="388" r="5" fill="#FFB6C1"/>
+  <circle cx="1700" cy="376" r="12" fill="#FFD700"/>
+  <circle cx="1688" cy="368" r="8" fill="#FFFFFF"/>
+  <circle cx="1712" cy="368" r="8" fill="#FFFFFF"/>
+  <circle cx="1688" cy="384" r="8" fill="#FFFFFF"/>
+  <circle cx="1712" cy="384" r="8" fill="#FFFFFF"/>
+</svg>

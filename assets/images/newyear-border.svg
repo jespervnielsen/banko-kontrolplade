@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="422" viewBox="0 0 2000 422">
+  <defs>
+    <linearGradient id="night" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a2e"/>
+      <stop offset="100%" style="stop-color:#1a1a4e"/>
+    </linearGradient>
+    <radialGradient id="firework1">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#FF4500"/>
+    </radialGradient>
+    <radialGradient id="firework2">
+      <stop offset="0%" style="stop-color:#00FF00"/>
+      <stop offset="100%" style="stop-color:#006400"/>
+    </radialGradient>
+    <radialGradient id="firework3">
+      <stop offset="0%" style="stop-color:#FF69B4"/>
+      <stop offset="100%" style="stop-color:#8B008B"/>
+    </radialGradient>
+  </defs>
+  <rect width="2000" height="422" fill="url(#night)"/>
+  <!-- Stars -->
+  <circle cx="50" cy="30" r="2" fill="#FFFFFF"/>
+  <circle cx="150" cy="60" r="1.5" fill="#FFFFFF"/>
+  <circle cx="280" cy="25" r="2" fill="#FFFFFF"/>
+  <circle cx="400" cy="80" r="1.5" fill="#FFFFFF"/>
+  <circle cx="520" cy="40" r="2" fill="#FFFFFF"/>
+  <circle cx="680" cy="70" r="1.5" fill="#FFFFFF"/>
+  <circle cx="800" cy="20" r="2" fill="#FFFFFF"/>
+  <circle cx="950" cy="55" r="1.5" fill="#FFFFFF"/>
+  <circle cx="1100" cy="35" r="2" fill="#FFFFFF"/>
+  <circle cx="1250" cy="75" r="1.5" fill="#FFFFFF"/>
+  <circle cx="1380" cy="28" r="2" fill="#FFFFFF"/>
+  <circle cx="1500" cy="65" r="1.5" fill="#FFFFFF"/>
+  <circle cx="1650" cy="45" r="2" fill="#FFFFFF"/>
+  <circle cx="1800" cy="85" r="1.5" fill="#FFFFFF"/>
+  <circle cx="1920" cy="38" r="2" fill="#FFFFFF"/>
+  <!-- Firework 1 -->
+  <g transform="translate(200, 180)">
+    <line x1="0" y1="0" x2="0" y2="-80" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="60" y2="-60" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-60" y2="-60" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="80" y2="0" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-80" y2="0" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="60" y2="60" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-60" y2="60" stroke="#FFD700" stroke-width="3"/>
+    <circle cx="0" cy="-80" r="5" fill="#FFD700"/>
+    <circle cx="60" cy="-60" r="5" fill="#FFA500"/>
+    <circle cx="-60" cy="-60" r="5" fill="#FFA500"/>
+    <circle cx="80" cy="0" r="5" fill="#FFD700"/>
+    <circle cx="-80" cy="0" r="5" fill="#FFD700"/>
+    <circle cx="60" cy="60" r="5" fill="#FFA500"/>
+    <circle cx="-60" cy="60" r="5" fill="#FFA500"/>
+  </g>
+  <!-- Firework 2 -->
+  <g transform="translate(600, 150)">
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#00FF00" stroke-width="3"/>
+    <line x1="0" y1="0" x2="50" y2="-50" stroke="#00FF00" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-50" y2="-50" stroke="#00FF00" stroke-width="3"/>
+    <line x1="0" y1="0" x2="70" y2="0" stroke="#00FF00" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-70" y2="0" stroke="#00FF00" stroke-width="3"/>
+    <line x1="0" y1="0" x2="50" y2="50" stroke="#00FF00" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-50" y2="50" stroke="#00FF00" stroke-width="3"/>
+    <circle cx="0" cy="-70" r="4" fill="#00FF00"/>
+    <circle cx="50" cy="-50" r="4" fill="#32CD32"/>
+    <circle cx="-50" cy="-50" r="4" fill="#32CD32"/>
+    <circle cx="70" cy="0" r="4" fill="#00FF00"/>
+    <circle cx="-70" cy="0" r="4" fill="#00FF00"/>
+    <circle cx="50" cy="50" r="4" fill="#32CD32"/>
+    <circle cx="-50" cy="50" r="4" fill="#32CD32"/>
+  </g>
+  <!-- Firework 3 -->
+  <g transform="translate(1000, 200)">
+    <line x1="0" y1="0" x2="0" y2="-90" stroke="#FF69B4" stroke-width="3"/>
+    <line x1="0" y1="0" x2="65" y2="-65" stroke="#FF69B4" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-65" y2="-65" stroke="#FF69B4" stroke-width="3"/>
+    <line x1="0" y1="0" x2="90" y2="0" stroke="#FF69B4" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-90" y2="0" stroke="#FF69B4" stroke-width="3"/>
+    <line x1="0" y1="0" x2="65" y2="65" stroke="#FF69B4" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-65" y2="65" stroke="#FF69B4" stroke-width="3"/>
+    <circle cx="0" cy="-90" r="6" fill="#FF69B4"/>
+    <circle cx="65" cy="-65" r="6" fill="#FF1493"/>
+    <circle cx="-65" cy="-65" r="6" fill="#FF1493"/>
+    <circle cx="90" cy="0" r="6" fill="#FF69B4"/>
+    <circle cx="-90" cy="0" r="6" fill="#FF69B4"/>
+    <circle cx="65" cy="65" r="6" fill="#FF1493"/>
+    <circle cx="-65" cy="65" r="6" fill="#FF1493"/>
+  </g>
+  <!-- Firework 4 -->
+  <g transform="translate(1400, 160)">
+    <line x1="0" y1="0" x2="0" y2="-75" stroke="#00BFFF" stroke-width="3"/>
+    <line x1="0" y1="0" x2="55" y2="-55" stroke="#00BFFF" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-55" y2="-55" stroke="#00BFFF" stroke-width="3"/>
+    <line x1="0" y1="0" x2="75" y2="0" stroke="#00BFFF" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-75" y2="0" stroke="#00BFFF" stroke-width="3"/>
+    <line x1="0" y1="0" x2="55" y2="55" stroke="#00BFFF" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-55" y2="55" stroke="#00BFFF" stroke-width="3"/>
+    <circle cx="0" cy="-75" r="5" fill="#00BFFF"/>
+    <circle cx="55" cy="-55" r="5" fill="#1E90FF"/>
+    <circle cx="-55" cy="-55" r="5" fill="#1E90FF"/>
+    <circle cx="75" cy="0" r="5" fill="#00BFFF"/>
+    <circle cx="-75" cy="0" r="5" fill="#00BFFF"/>
+    <circle cx="55" cy="55" r="5" fill="#1E90FF"/>
+    <circle cx="-55" cy="55" r="5" fill="#1E90FF"/>
+  </g>
+  <!-- Firework 5 -->
+  <g transform="translate(1800, 190)">
+    <line x1="0" y1="0" x2="0" y2="-85" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="60" y2="-60" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-60" y2="-60" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="85" y2="0" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-85" y2="0" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="60" y2="60" stroke="#FFD700" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-60" y2="60" stroke="#FFD700" stroke-width="3"/>
+    <circle cx="0" cy="-85" r="5" fill="#FFD700"/>
+    <circle cx="60" cy="-60" r="5" fill="#FFA500"/>
+    <circle cx="-60" cy="-60" r="5" fill="#FFA500"/>
+    <circle cx="85" cy="0" r="5" fill="#FFD700"/>
+    <circle cx="-85" cy="0" r="5" fill="#FFD700"/>
+    <circle cx="60" cy="60" r="5" fill="#FFA500"/>
+    <circle cx="-60" cy="60" r="5" fill="#FFA500"/>
+  </g>
+  <!-- Champagne glasses -->
+  <g transform="translate(100, 350)">
+    <path d="M0,0 L15,60 L-15,60 Z" fill="#FFD700" opacity="0.3"/>
+    <rect x="-3" y="60" width="6" height="30" fill="#C0C0C0"/>
+    <ellipse cx="0" cy="90" rx="15" ry="5" fill="#C0C0C0"/>
+  </g>
+  <g transform="translate(1900, 350)">
+    <path d="M0,0 L15,60 L-15,60 Z" fill="#FFD700" opacity="0.3"/>
+    <rect x="-3" y="60" width="6" height="30" fill="#C0C0C0"/>
+    <ellipse cx="0" cy="90" rx="15" ry="5" fill="#C0C0C0"/>
+  </g>
+  <!-- 2026 Text -->
+  <text x="1000" y="380" font-family="Arial, sans-serif" font-size="60" fill="#FFD700" text-anchor="middle" font-weight="bold">GODT NYTÅR</text>
+</svg>

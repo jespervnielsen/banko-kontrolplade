@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="422" viewBox="0 0 2000 422">
+  <defs>
+    <linearGradient id="fastelavn-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E1BEE7"/>
+      <stop offset="100%" style="stop-color:#F3E5F5"/>
+    </linearGradient>
+  </defs>
+  <rect width="2000" height="422" fill="url(#fastelavn-sky)"/>
+  
+  <!-- Tønder -->
+  <g transform="translate(100, 280)">
+    <ellipse cx="0" cy="60" rx="35" ry="10" fill="#5D4037"/>
+    <rect x="-35" y="0" width="70" height="60" fill="#8D6E63"/>
+    <ellipse cx="0" cy="0" rx="35" ry="10" fill="#A1887F"/>
+    <rect x="-35" y="15" width="70" height="8" fill="#FFD700"/>
+    <rect x="-35" y="40" width="70" height="8" fill="#FFD700"/>
+  </g>
+  
+  <g transform="translate(500, 290)">
+    <ellipse cx="0" cy="50" rx="30" ry="8" fill="#5D4037"/>
+    <rect x="-30" y="0" width="60" height="50" fill="#8D6E63"/>
+    <ellipse cx="0" cy="0" rx="30" ry="8" fill="#A1887F"/>
+    <rect x="-30" y="12" width="60" height="6" fill="#E91E63"/>
+    <rect x="-30" y="32" width="60" height="6" fill="#E91E63"/>
+  </g>
+  
+  <g transform="translate(900, 275)">
+    <ellipse cx="0" cy="65" rx="38" ry="11" fill="#5D4037"/>
+    <rect x="-38" y="0" width="76" height="65" fill="#8D6E63"/>
+    <ellipse cx="0" cy="0" rx="38" ry="11" fill="#A1887F"/>
+    <rect x="-38" y="18" width="76" height="8" fill="#4CAF50"/>
+    <rect x="-38" y="45" width="76" height="8" fill="#4CAF50"/>
+  </g>
+  
+  <g transform="translate(1300, 285)">
+    <ellipse cx="0" cy="55" rx="32" ry="9" fill="#5D4037"/>
+    <rect x="-32" y="0" width="64" height="55" fill="#8D6E63"/>
+    <ellipse cx="0" cy="0" rx="32" ry="9" fill="#A1887F"/>
+    <rect x="-32" y="14" width="64" height="7" fill="#9C27B0"/>
+    <rect x="-32" y="36" width="64" height="7" fill="#9C27B0"/>
+  </g>
+  
+  <g transform="translate(1700, 280)">
+    <ellipse cx="0" cy="60" rx="35" ry="10" fill="#5D4037"/>
+    <rect x="-35" y="0" width="70" height="60" fill="#8D6E63"/>
+    <ellipse cx="0" cy="0" rx="35" ry="10" fill="#A1887F"/>
+    <rect x="-35" y="15" width="70" height="8" fill="#2196F3"/>
+    <rect x="-35" y="40" width="70" height="8" fill="#2196F3"/>
+  </g>
+  
+  <!-- Fastelavnsris -->
+  <g transform="translate(300, 200)">
+    <line x1="0" y1="0" x2="0" y2="120" stroke="#795548" stroke-width="4"/>
+    <circle cx="-15" cy="20" r="12" fill="#E91E63"/>
+    <circle cx="15" cy="30" r="10" fill="#FFEB3B"/>
+    <circle cx="-10" cy="50" r="11" fill="#4CAF50"/>
+    <circle cx="12" cy="65" r="9" fill="#9C27B0"/>
+    <circle cx="-8" cy="85" r="10" fill="#2196F3"/>
+  </g>
+  
+  <g transform="translate(700, 210)">
+    <line x1="0" y1="0" x2="0" y2="100" stroke="#795548" stroke-width="4"/>
+    <circle cx="-12" cy="15" r="10" fill="#FFEB3B"/>
+    <circle cx="14" cy="28" r="11" fill="#E91E63"/>
+    <circle cx="-10" cy="48" r="9" fill="#9C27B0"/>
+    <circle cx="10" cy="68" r="12" fill="#4CAF50"/>
+  </g>
+  
+  <g transform="translate(1100, 195)">
+    <line x1="0" y1="0" x2="0" y2="130" stroke="#795548" stroke-width="4"/>
+    <circle cx="-14" cy="22" r="11" fill="#9C27B0"/>
+    <circle cx="16" cy="40" r="10" fill="#FFEB3B"/>
+    <circle cx="-12" cy="60" r="12" fill="#E91E63"/>
+    <circle cx="14" cy="82" r="9" fill="#2196F3"/>
+    <circle cx="-8" cy="105" r="10" fill="#4CAF50"/>
+  </g>
+  
+  <g transform="translate(1500, 205)">
+    <line x1="0" y1="0" x2="0" y2="110" stroke="#795548" stroke-width="4"/>
+    <circle cx="-13" cy="18" r="10" fill="#4CAF50"/>
+    <circle cx="12" cy="35" r="11" fill="#E91E63"/>
+    <circle cx="-10" cy="55" r="9" fill="#FFEB3B"/>
+    <circle cx="11" cy="78" r="12" fill="#9C27B0"/>
+  </g>
+  
+  <g transform="translate(1900, 200)">
+    <line x1="0" y1="0" x2="0" y2="120" stroke="#795548" stroke-width="4"/>
+    <circle cx="-15" cy="20" r="12" fill="#2196F3"/>
+    <circle cx="15" cy="38" r="10" fill="#FFEB3B"/>
+    <circle cx="-10" cy="58" r="11" fill="#E91E63"/>
+    <circle cx="12" cy="80" r="9" fill="#4CAF50"/>
+  </g>
+  
+  <!-- Katte (symbol) -->
+  <g transform="translate(200, 120)">
+    <circle cx="0" cy="0" r="25" fill="#212121"/>
+    <polygon points="-20,-25 -10,-5 -25,-5" fill="#212121"/>
+    <polygon points="20,-25 10,-5 25,-5" fill="#212121"/>
+    <circle cx="-8" cy="-5" r="4" fill="#FFEB3B"/>
+    <circle cx="8" cy="-5" r="4" fill="#FFEB3B"/>
+    <ellipse cx="0" cy="8" rx="5" ry="3" fill="#E91E63"/>
+  </g>
+  
+  <g transform="translate(1000, 100)">
+    <circle cx="0" cy="0" r="30" fill="#212121"/>
+    <polygon points="-24,-30 -12,-6 -30,-6" fill="#212121"/>
+    <polygon points="24,-30 12,-6 30,-6" fill="#212121"/>
+    <circle cx="-10" cy="-6" r="5" fill="#FFEB3B"/>
+    <circle cx="10" cy="-6" r="5" fill="#FFEB3B"/>
+    <ellipse cx="0" cy="10" rx="6" ry="4" fill="#E91E63"/>
+  </g>
+  
+  <g transform="translate(1800, 115)">
+    <circle cx="0" cy="0" r="28" fill="#212121"/>
+    <polygon points="-22,-28 -11,-5 -28,-5" fill="#212121"/>
+    <polygon points="22,-28 11,-5 28,-5" fill="#212121"/>
+    <circle cx="-9" cy="-5" r="4" fill="#FFEB3B"/>
+    <circle cx="9" cy="-5" r="4" fill="#FFEB3B"/>
+    <ellipse cx="0" cy="9" rx="5" ry="3" fill="#E91E63"/>
+  </g>
+  
+  <!-- Konfetti -->
+  <rect x="50" y="50" width="8" height="8" fill="#E91E63" transform="rotate(30 54 54)"/>
+  <rect x="150" y="80" width="6" height="6" fill="#FFEB3B" transform="rotate(45 153 83)"/>
+  <rect x="350" y="40" width="7" height="7" fill="#4CAF50" transform="rotate(20 353 43)"/>
+  <rect x="550" y="70" width="8" height="8" fill="#9C27B0" transform="rotate(60 554 74)"/>
+  <rect x="750" y="35" width="6" height="6" fill="#2196F3" transform="rotate(15 753 38)"/>
+  <rect x="950" y="60" width="7" height="7" fill="#E91E63" transform="rotate(40 953 63)"/>
+  <rect x="1150" y="45" width="8" height="8" fill="#FFEB3B" transform="rotate(55 1154 49)"/>
+  <rect x="1350" y="75" width="6" height="6" fill="#4CAF50" transform="rotate(25 1353 78)"/>
+  <rect x="1550" y="50" width="7" height="7" fill="#9C27B0" transform="rotate(35 1553 53)"/>
+  <rect x="1750" y="65" width="8" height="8" fill="#2196F3" transform="rotate(50 1754 69)"/>
+  <rect x="1950" y="40" width="6" height="6" fill="#E91E63" transform="rotate(10 1953 43)"/>
+</svg>

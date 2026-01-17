@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="422" viewBox="0 0 2000 422">
+  <defs>
+    <linearGradient id="summer-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#03A9F4"/>
+      <stop offset="100%" style="stop-color:#81D4FA"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE0B2"/>
+      <stop offset="100%" style="stop-color:#FFCC80"/>
+    </linearGradient>
+  </defs>
+  <rect width="2000" height="422" fill="url(#summer-sky)"/>
+  
+  <!-- Sol -->
+  <circle cx="150" cy="100" r="60" fill="#FFEB3B"/>
+  <g stroke="#FFEB3B" stroke-width="4">
+    <line x1="150" y1="20" x2="150" y2="0"/>
+    <line x1="150" y1="180" x2="150" y2="200"/>
+    <line x1="70" y1="100" x2="50" y2="100"/>
+    <line x1="230" y1="100" x2="250" y2="100"/>
+    <line x1="93" y1="43" x2="78" y2="28"/>
+    <line x1="207" y1="43" x2="222" y2="28"/>
+    <line x1="93" y1="157" x2="78" y2="172"/>
+    <line x1="207" y1="157" x2="222" y2="172"/>
+  </g>
+  
+  <!-- Sand/strand -->
+  <ellipse cx="500" cy="400" rx="200" ry="50" fill="url(#sand)"/>
+  <ellipse cx="1000" cy="410" rx="250" ry="45" fill="url(#sand)"/>
+  <ellipse cx="1500" cy="395" rx="220" ry="55" fill="url(#sand)"/>
+  <ellipse cx="100" cy="405" rx="150" ry="40" fill="url(#sand)"/>
+  <ellipse cx="1900" cy="400" rx="180" ry="48" fill="url(#sand)"/>
+  
+  <!-- Bølger -->
+  <path d="M0,350 Q50,330 100,350 T200,350 T300,350 T400,350 T500,350 T600,350 T700,350 T800,350 T900,350 T1000,350 T1100,350 T1200,350 T1300,350 T1400,350 T1500,350 T1600,350 T1700,350 T1800,350 T1900,350 T2000,350" fill="none" stroke="#0288D1" stroke-width="8" opacity="0.6"/>
+  <path d="M0,365 Q50,345 100,365 T200,365 T300,365 T400,365 T500,365 T600,365 T700,365 T800,365 T900,365 T1000,365 T1100,365 T1200,365 T1300,365 T1400,365 T1500,365 T1600,365 T1700,365 T1800,365 T1900,365 T2000,365" fill="none" stroke="#039BE5" stroke-width="6" opacity="0.5"/>
+  
+  <!-- Parasoller -->
+  <g transform="translate(400, 250)">
+    <line x1="0" y1="0" x2="0" y2="100" stroke="#795548" stroke-width="6"/>
+    <path d="M-60,-10 Q0,-70 60,-10 Z" fill="#E91E63"/>
+    <path d="M-60,-10 Q-30,-40 0,-10 Z" fill="#F48FB1"/>
+    <path d="M0,-10 Q30,-40 60,-10 Z" fill="#F48FB1"/>
+  </g>
+  
+  <g transform="translate(800, 260)">
+    <line x1="0" y1="0" x2="0" y2="90" stroke="#795548" stroke-width="6"/>
+    <path d="M-55,-10 Q0,-65 55,-10 Z" fill="#FF9800"/>
+    <path d="M-55,-10 Q-27,-38 0,-10 Z" fill="#FFB74D"/>
+    <path d="M0,-10 Q27,-38 55,-10 Z" fill="#FFB74D"/>
+  </g>
+  
+  <g transform="translate(1200, 245)">
+    <line x1="0" y1="0" x2="0" y2="105" stroke="#795548" stroke-width="6"/>
+    <path d="M-65,-10 Q0,-75 65,-10 Z" fill="#4CAF50"/>
+    <path d="M-65,-10 Q-32,-42 0,-10 Z" fill="#81C784"/>
+    <path d="M0,-10 Q32,-42 65,-10 Z" fill="#81C784"/>
+  </g>
+  
+  <g transform="translate(1600, 255)">
+    <line x1="0" y1="0" x2="0" y2="95" stroke="#795548" stroke-width="6"/>
+    <path d="M-58,-10 Q0,-68 58,-10 Z" fill="#2196F3"/>
+    <path d="M-58,-10 Q-29,-39 0,-10 Z" fill="#64B5F6"/>
+    <path d="M0,-10 Q29,-39 58,-10 Z" fill="#64B5F6"/>
+  </g>
+  
+  <!-- Is -->
+  <g transform="translate(600, 150)">
+    <path d="M-15,40 L0,80 L15,40 Z" fill="#FFCC80"/>
+    <circle cx="0" cy="30" r="20" fill="#E91E63"/>
+    <circle cx="0" cy="10" r="18" fill="#FFEB3B"/>
+  </g>
+  
+  <g transform="translate(1400, 140)">
+    <path d="M-15,45 L0,85 L15,45 Z" fill="#FFCC80"/>
+    <circle cx="0" cy="35" r="22" fill="#81D4FA"/>
+    <circle cx="0" cy="12" r="20" fill="#CE93D8"/>
+  </g>
+  
+  <!-- Skyer -->
+  <g fill="white" opacity="0.8">
+    <ellipse cx="350" cy="80" rx="40" ry="25"/>
+    <ellipse cx="380" cy="70" rx="35" ry="22"/>
+    <ellipse cx="410" cy="82" rx="38" ry="24"/>
+  </g>
+  
+  <g fill="white" opacity="0.7">
+    <ellipse cx="1100" cy="60" rx="45" ry="28"/>
+    <ellipse cx="1135" cy="50" rx="40" ry="25"/>
+    <ellipse cx="1170" cy="62" rx="42" ry="26"/>
+  </g>
+  
+  <g fill="white" opacity="0.75">
+    <ellipse cx="1700" cy="90" rx="38" ry="22"/>
+    <ellipse cx="1730" cy="80" rx="35" ry="20"/>
+    <ellipse cx="1760" cy="88" rx="40" ry="24"/>
+  </g>
+  
+  <!-- Strandbold -->
+  <circle cx="950" cy="320" r="25" fill="#FFEB3B"/>
+  <path d="M925,320 A25,25 0 0,1 950,295" fill="#E91E63"/>
+  <path d="M950,345 A25,25 0 0,1 925,320" fill="#2196F3"/>
+  <path d="M975,320 A25,25 0 0,1 950,345" fill="#4CAF50"/>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="422" viewBox="0 0 2000 422">
+  <defs>
+    <linearGradient id="party-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E1BEE7"/>
+      <stop offset="100%" style="stop-color:#F3E5F5"/>
+    </linearGradient>
+  </defs>
+  <rect width="2000" height="422" fill="url(#party-bg)"/>
+  
+  <!-- Balloner -->
+  <g transform="translate(100, 180)">
+    <ellipse cx="0" cy="0" rx="35" ry="45" fill="#E91E63"/>
+    <polygon points="-5,45 5,45 0,55" fill="#E91E63"/>
+    <path d="M0,55 Q10,100 -5,150" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-10" cy="-15" rx="8" ry="10" fill="#F48FB1" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(200, 150)">
+    <ellipse cx="0" cy="0" rx="32" ry="42" fill="#FFEB3B"/>
+    <polygon points="-4,42 4,42 0,52" fill="#FFEB3B"/>
+    <path d="M0,52 Q-8,95 5,140" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-8" cy="-12" rx="7" ry="9" fill="#FFF9C4" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(320, 170)">
+    <ellipse cx="0" cy="0" rx="38" ry="48" fill="#4CAF50"/>
+    <polygon points="-5,48 5,48 0,58" fill="#4CAF50"/>
+    <path d="M0,58 Q12,105 -3,155" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-12" cy="-16" rx="9" ry="11" fill="#81C784" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(550, 160)">
+    <ellipse cx="0" cy="0" rx="34" ry="44" fill="#2196F3"/>
+    <polygon points="-4,44 4,44 0,54" fill="#2196F3"/>
+    <path d="M0,54 Q-10,98 8,145" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-9" cy="-14" rx="8" ry="10" fill="#64B5F6" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(700, 185)">
+    <ellipse cx="0" cy="0" rx="36" ry="46" fill="#9C27B0"/>
+    <polygon points="-5,46 5,46 0,56" fill="#9C27B0"/>
+    <path d="M0,56 Q8,102 -6,150" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-10" cy="-15" rx="8" ry="10" fill="#CE93D8" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(900, 155)">
+    <ellipse cx="0" cy="0" rx="33" ry="43" fill="#FF5722"/>
+    <polygon points="-4,43 4,43 0,53" fill="#FF5722"/>
+    <path d="M0,53 Q-12,96 5,142" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-8" cy="-13" rx="7" ry="9" fill="#FFAB91" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(1100, 175)">
+    <ellipse cx="0" cy="0" rx="37" ry="47" fill="#E91E63"/>
+    <polygon points="-5,47 5,47 0,57" fill="#E91E63"/>
+    <path d="M0,57 Q10,103 -4,152" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-11" cy="-15" rx="9" ry="11" fill="#F48FB1" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(1300, 145)">
+    <ellipse cx="0" cy="0" rx="35" ry="45" fill="#FFEB3B"/>
+    <polygon points="-5,45 5,45 0,55" fill="#FFEB3B"/>
+    <path d="M0,55 Q-9,100 6,148" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-10" cy="-14" rx="8" ry="10" fill="#FFF9C4" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(1500, 165)">
+    <ellipse cx="0" cy="0" rx="34" ry="44" fill="#4CAF50"/>
+    <polygon points="-4,44 4,44 0,54" fill="#4CAF50"/>
+    <path d="M0,54 Q11,99 -5,147" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-9" cy="-13" rx="8" ry="10" fill="#81C784" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(1700, 180)">
+    <ellipse cx="0" cy="0" rx="36" ry="46" fill="#2196F3"/>
+    <polygon points="-5,46 5,46 0,56" fill="#2196F3"/>
+    <path d="M0,56 Q-8,101 7,149" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-10" cy="-15" rx="8" ry="10" fill="#64B5F6" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(1900, 150)">
+    <ellipse cx="0" cy="0" rx="33" ry="43" fill="#9C27B0"/>
+    <polygon points="-4,43 4,43 0,53" fill="#9C27B0"/>
+    <path d="M0,53 Q10,97 -4,144" stroke="#9E9E9E" stroke-width="2" fill="none"/>
+    <ellipse cx="-8" cy="-13" rx="7" ry="9" fill="#CE93D8" opacity="0.5"/>
+  </g>
+  
+  <!-- Konfetti -->
+  <rect x="50" y="30" width="10" height="10" fill="#E91E63" transform="rotate(25 55 35)"/>
+  <rect x="130" y="60" width="8" height="8" fill="#FFEB3B" transform="rotate(45 134 64)"/>
+  <rect x="250" y="40" width="9" height="9" fill="#4CAF50" transform="rotate(15 254 44)"/>
+  <rect x="380" y="55" width="10" height="10" fill="#2196F3" transform="rotate(60 385 60)"/>
+  <rect x="480" y="35" width="8" height="8" fill="#9C27B0" transform="rotate(30 484 39)"/>
+  <rect x="620" y="50" width="9" height="9" fill="#FF5722" transform="rotate(40 624 54)"/>
+  <rect x="750" y="25" width="10" height="10" fill="#E91E63" transform="rotate(55 755 30)"/>
+  <rect x="850" y="65" width="8" height="8" fill="#FFEB3B" transform="rotate(20 854 69)"/>
+  <rect x="980" y="45" width="9" height="9" fill="#4CAF50" transform="rotate(35 984 49)"/>
+  <rect x="1080" y="30" width="10" height="10" fill="#2196F3" transform="rotate(50 1085 35)"/>
+  <rect x="1200" y="55" width="8" height="8" fill="#9C27B0" transform="rotate(25 1204 59)"/>
+  <rect x="1350" y="40" width="9" height="9" fill="#FF5722" transform="rotate(45 1354 44)"/>
+  <rect x="1450" y="60" width="10" height="10" fill="#E91E63" transform="rotate(15 1455 65)"/>
+  <rect x="1580" y="35" width="8" height="8" fill="#FFEB3B" transform="rotate(60 1584 39)"/>
+  <rect x="1680" y="50" width="9" height="9" fill="#4CAF50" transform="rotate(30 1684 54)"/>
+  <rect x="1800" y="25" width="10" height="10" fill="#2196F3" transform="rotate(40 1805 30)"/>
+  <rect x="1920" y="45" width="8" height="8" fill="#9C27B0" transform="rotate(55 1924 49)"/>
+  
+  <!-- Serpentiner -->
+  <path d="M0,80 Q50,60 100,80 T200,80 T300,80" stroke="#E91E63" stroke-width="4" fill="none" opacity="0.7"/>
+  <path d="M400,70 Q450,50 500,70 T600,70 T700,70" stroke="#FFEB3B" stroke-width="4" fill="none" opacity="0.7"/>
+  <path d="M800,85 Q850,65 900,85 T1000,85 T1100,85" stroke="#4CAF50" stroke-width="4" fill="none" opacity="0.7"/>
+  <path d="M1200,75 Q1250,55 1300,75 T1400,75 T1500,75" stroke="#2196F3" stroke-width="4" fill="none" opacity="0.7"/>
+  <path d="M1600,80 Q1650,60 1700,80 T1800,80 T1900,80 T2000,80" stroke="#9C27B0" stroke-width="4" fill="none" opacity="0.7"/>
+  
+  <!-- Stjerner/glitter -->
+  <polygon points="450,120 453,130 463,130 455,137 458,147 450,141 442,147 445,137 437,130 447,130" fill="#FFD700"/>
+  <polygon points="1050,100 1053,110 1063,110 1055,117 1058,127 1050,121 1042,127 1045,117 1037,110 1047,110" fill="#FFD700"/>
+  <polygon points="1650,115 1653,125 1663,125 1655,132 1658,142 1650,136 1642,142 1645,132 1637,125 1647,125" fill="#FFD700"/>
+</svg>

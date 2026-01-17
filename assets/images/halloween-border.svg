@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="422" viewBox="0 0 2000 422">
+  <defs>
+    <linearGradient id="halloween-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#16213E"/>
+    </linearGradient>
+  </defs>
+  <rect width="2000" height="422" fill="url(#halloween-sky)"/>
+  
+  <!-- Måne -->
+  <circle cx="1800" cy="80" r="50" fill="#FFF9C4"/>
+  <circle cx="1820" cy="70" r="45" fill="url(#halloween-sky)"/>
+  
+  <!-- Græskar 1 -->
+  <g transform="translate(150, 280)">
+    <ellipse cx="0" cy="0" rx="50" ry="45" fill="#FF5722"/>
+    <ellipse cx="-25" cy="0" rx="20" ry="40" fill="#E64A19"/>
+    <ellipse cx="25" cy="0" rx="20" ry="40" fill="#E64A19"/>
+    <rect x="-8" y="-55" width="16" height="20" fill="#4CAF50" rx="3"/>
+    <!-- Ansigt -->
+    <polygon points="-20,-15 -10,-5 -25,5" fill="#212121"/>
+    <polygon points="20,-15 10,-5 25,5" fill="#212121"/>
+    <path d="M-20,15 Q0,35 20,15 Q10,25 0,20 Q-10,25 -20,15" fill="#212121"/>
+  </g>
+  
+  <!-- Græskar 2 -->
+  <g transform="translate(550, 290)">
+    <ellipse cx="0" cy="0" rx="45" ry="40" fill="#FF5722"/>
+    <ellipse cx="-22" cy="0" rx="18" ry="35" fill="#E64A19"/>
+    <ellipse cx="22" cy="0" rx="18" ry="35" fill="#E64A19"/>
+    <rect x="-7" y="-50" width="14" height="18" fill="#4CAF50" rx="3"/>
+    <polygon points="-18,-12 -8,-2 -22,6" fill="#212121"/>
+    <polygon points="18,-12 8,-2 22,6" fill="#212121"/>
+    <path d="M-18,12 Q0,28 18,12" fill="#212121"/>
+  </g>
+  
+  <!-- Græskar 3 -->
+  <g transform="translate(950, 275)">
+    <ellipse cx="0" cy="0" rx="55" ry="50" fill="#FF5722"/>
+    <ellipse cx="-28" cy="0" rx="22" ry="45" fill="#E64A19"/>
+    <ellipse cx="28" cy="0" rx="22" ry="45" fill="#E64A19"/>
+    <rect x="-9" y="-60" width="18" height="22" fill="#4CAF50" rx="3"/>
+    <polygon points="-22,-18 -12,-6 -28,8" fill="#212121"/>
+    <polygon points="22,-18 12,-6 28,8" fill="#212121"/>
+    <path d="M-22,18 Q0,38 22,18 Q12,28 0,24 Q-12,28 -22,18" fill="#212121"/>
+  </g>
+  
+  <!-- Græskar 4 -->
+  <g transform="translate(1350, 285)">
+    <ellipse cx="0" cy="0" rx="48" ry="42" fill="#FF5722"/>
+    <ellipse cx="-24" cy="0" rx="19" ry="38" fill="#E64A19"/>
+    <ellipse cx="24" cy="0" rx="19" ry="38" fill="#E64A19"/>
+    <rect x="-7" y="-52" width="14" height="18" fill="#4CAF50" rx="3"/>
+    <polygon points="-19,-14 -9,-4 -24,6" fill="#212121"/>
+    <polygon points="19,-14 9,-4 24,6" fill="#212121"/>
+    <path d="M-19,14 Q0,30 19,14" fill="#212121"/>
+  </g>
+  
+  <!-- Græskar 5 -->
+  <g transform="translate(1750, 280)">
+    <ellipse cx="0" cy="0" rx="52" ry="47" fill="#FF5722"/>
+    <ellipse cx="-26" cy="0" rx="21" ry="42" fill="#E64A19"/>
+    <ellipse cx="26" cy="0" rx="21" ry="42" fill="#E64A19"/>
+    <rect x="-8" y="-57" width="16" height="20" fill="#4CAF50" rx="3"/>
+    <polygon points="-21,-16 -11,-5 -26,7" fill="#212121"/>
+    <polygon points="21,-16 11,-5 26,7" fill="#212121"/>
+    <path d="M-21,16 Q0,34 21,16 Q11,26 0,22 Q-11,26 -21,16" fill="#212121"/>
+  </g>
+  
+  <!-- Flagermus -->
+  <g transform="translate(300, 120)" fill="#212121">
+    <ellipse cx="0" cy="0" rx="12" ry="10"/>
+    <path d="M-12,-5 Q-35,-25 -40,5 Q-30,-5 -20,0 Q-15,-2 -12,0"/>
+    <path d="M12,-5 Q35,-25 40,5 Q30,-5 20,0 Q15,-2 12,0"/>
+    <circle cx="-4" cy="-2" r="2" fill="#FF5722"/>
+    <circle cx="4" cy="-2" r="2" fill="#FF5722"/>
+  </g>
+  
+  <g transform="translate(700, 80)" fill="#212121">
+    <ellipse cx="0" cy="0" rx="15" ry="12"/>
+    <path d="M-15,-6 Q-45,-30 -50,6 Q-38,-6 -25,0 Q-18,-3 -15,0"/>
+    <path d="M15,-6 Q45,-30 50,6 Q38,-6 25,0 Q18,-3 15,0"/>
+    <circle cx="-5" cy="-3" r="2.5" fill="#FF5722"/>
+    <circle cx="5" cy="-3" r="2.5" fill="#FF5722"/>
+  </g>
+  
+  <g transform="translate(1100, 100)" fill="#212121">
+    <ellipse cx="0" cy="0" rx="13" ry="11"/>
+    <path d="M-13,-5 Q-40,-28 -44,5 Q-33,-5 -22,0 Q-16,-2 -13,0"/>
+    <path d="M13,-5 Q40,-28 44,5 Q33,-5 22,0 Q16,-2 13,0"/>
+    <circle cx="-4" cy="-2" r="2" fill="#FF5722"/>
+    <circle cx="4" cy="-2" r="2" fill="#FF5722"/>
+  </g>
+  
+  <g transform="translate(1500, 70)" fill="#212121">
+    <ellipse cx="0" cy="0" rx="14" ry="11"/>
+    <path d="M-14,-6 Q-42,-28 -47,6 Q-35,-6 -23,0 Q-17,-3 -14,0"/>
+    <path d="M14,-6 Q42,-28 47,6 Q35,-6 23,0 Q17,-3 14,0"/>
+    <circle cx="-5" cy="-2" r="2" fill="#FF5722"/>
+    <circle cx="5" cy="-2" r="2" fill="#FF5722"/>
+  </g>
+  
+  <g transform="translate(1900, 130)" fill="#212121">
+    <ellipse cx="0" cy="0" rx="12" ry="10"/>
+    <path d="M-12,-5 Q-35,-25 -40,5 Q-30,-5 -20,0 Q-15,-2 -12,0"/>
+    <path d="M12,-5 Q35,-25 40,5 Q30,-5 20,0 Q15,-2 12,0"/>
+    <circle cx="-4" cy="-2" r="2" fill="#FF5722"/>
+    <circle cx="4" cy="-2" r="2" fill="#FF5722"/>
+  </g>
+  
+  <!-- Stjerner -->
+  <circle cx="100" cy="50" r="2" fill="#FFF9C4"/>
+  <circle cx="250" cy="30" r="1.5" fill="#FFF9C4"/>
+  <circle cx="400" cy="60" r="2" fill="#FFF9C4"/>
+  <circle cx="600" cy="40" r="1.5" fill="#FFF9C4"/>
+  <circle cx="850" cy="55" r="2" fill="#FFF9C4"/>
+  <circle cx="1000" cy="35" r="1.5" fill="#FFF9C4"/>
+  <circle cx="1200" cy="50" r="2" fill="#FFF9C4"/>
+  <circle cx="1400" cy="30" r="1.5" fill="#FFF9C4"/>
+  <circle cx="1600" cy="45" r="2" fill="#FFF9C4"/>
+  <circle cx="1950" cy="40" r="1.5" fill="#FFF9C4"/>
+  
+  <!-- Spindelvæv i hjørner -->
+  <g stroke="#9E9E9E" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M0,0 Q30,30 0,60"/>
+    <path d="M0,0 Q40,20 80,0"/>
+    <path d="M0,0 L40,40"/>
+    <line x1="10" y1="20" x2="30" y2="10"/>
+    <line x1="15" y1="35" x2="35" y2="25"/>
+  </g>
+</svg>
